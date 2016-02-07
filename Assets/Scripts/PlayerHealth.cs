@@ -18,7 +18,9 @@ public class PlayerHealth : MonoBehaviour {
 	}
 
 	void decreaseHealth(){
-		currentHealth -= 2f;
+		if (currentHealth > 0) {
+			currentHealth -= 2f;
+		}
 		float calculcatedHealth = currentHealth / maxHealth;
 		setHealthBar (calculcatedHealth);
 	}	
