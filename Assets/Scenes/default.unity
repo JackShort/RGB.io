@@ -98,9 +98,10 @@ GameObject:
   - 114: {fileID: 572558864}
   - 114: {fileID: 572558868}
   - 114: {fileID: 572558869}
+  - 50: {fileID: 572558870}
   m_Layer: 0
   m_Name: player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -120,6 +121,7 @@ MonoBehaviour:
   range: 5
   autoAttackCooldown: 1.5
   projectile: {fileID: 139954, guid: d6bbf451f91db447da852eed0da6c4bb, type: 2}
+  mousePosition: {x: 0, y: 0, z: 0}
 --- !u!58 &572558865
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -204,6 +206,23 @@ MonoBehaviour:
   qProjectile: {fileID: 179622, guid: 910e36b84c5f74b16b87550e7d637f15, type: 2}
   isSpell1Active: 0
   spell1Range: 5
+--- !u!50 &572558870
+Rigidbody2D:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 572558863}
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1204722984
 GameObject:
   m_ObjectHideFlags: 0
@@ -300,9 +319,10 @@ GameObject:
   - 4: {fileID: 1603227921}
   - 212: {fileID: 1603227920}
   - 58: {fileID: 1603227919}
+  - 50: {fileID: 1603227922}
   m_Layer: 0
   m_Name: enemy
-  m_TagString: enemy
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -363,3 +383,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
+--- !u!50 &1603227922
+Rigidbody2D:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1603227918}
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
