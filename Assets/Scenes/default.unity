@@ -94,6 +94,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 901988241}
   - 212: {fileID: 901988240}
+  - 58: {fileID: 901988243}
   m_Layer: 0
   m_Name: red
   m_TagString: Untagged
@@ -143,6 +144,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
+--- !u!58 &901988243
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 901988239}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.5
 --- !u!1 &1524442298
 GameObject:
   m_ObjectHideFlags: 0
@@ -214,6 +229,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 7
+  range: 5
 --- !u!1 &1695230553
 GameObject:
   m_ObjectHideFlags: 0
