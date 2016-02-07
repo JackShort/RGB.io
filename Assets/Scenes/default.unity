@@ -95,7 +95,7 @@ GameObject:
   - 4: {fileID: 901988241}
   - 212: {fileID: 901988240}
   - 58: {fileID: 901988243}
-  m_Layer: 0
+  m_Layer: 18
   m_Name: red
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -168,8 +168,9 @@ GameObject:
   - 4: {fileID: 1524442300}
   - 212: {fileID: 1524442299}
   - 114: {fileID: 1524442301}
-  m_Layer: 0
-  m_Name: blue
+  - 58: {fileID: 1524442302}
+  m_Layer: 19
+  m_Name: player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -230,6 +231,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 7
   range: 5
+  autoAttackCooldown: 1.5
+  projectile: {fileID: 139954, guid: d6bbf451f91db447da852eed0da6c4bb, type: 2}
+--- !u!58 &1524442302
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1524442298}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.5
 --- !u!1 &1695230553
 GameObject:
   m_ObjectHideFlags: 0
