@@ -10,7 +10,7 @@ GameObject:
   - 4: {fileID: 487298}
   - 212: {fileID: 21213386}
   - 114: {fileID: 11424128}
-  m_Layer: 8
+  m_Layer: 19
   m_Name: smallBall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -85,7 +85,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: m_Layer
-      value: 8
+      value: 19
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
