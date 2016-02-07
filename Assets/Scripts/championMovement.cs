@@ -8,7 +8,7 @@ public class championMovement : MonoBehaviour {
 	public float autoAttackCooldown = 1.5f;
 	public GameObject projectile;
 
-	private Vector3 mousePosition;
+	public Vector3 mousePosition;
 	private bool needsToMove = false;
 	private Transform transformToMoveTo;
 	private float autoAttackTimer;
@@ -38,7 +38,6 @@ public class championMovement : MonoBehaviour {
 				if(distance > range) {
 					needsToMove = true;
 					transformToMoveTo = hit.transform;
-					Debug.Log(transformToMoveTo);
 					mousePosition = hit.transform.position;
 					shouldAutoAttack = true;
 				} else {
