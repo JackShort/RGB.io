@@ -16,6 +16,7 @@ public class championMovement : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		mousePosition = transform.position;
 		autoAttackTimer = autoAttackCooldown;
 	}
 
